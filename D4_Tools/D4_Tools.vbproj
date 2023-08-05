@@ -119,5 +119,13 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ressources\d4-logo.png" />
+    <Content Include="Ressources\Gathering-Legion.jpg" />
+    <Content Include="Ressources\Helltide.jpg" />
+    <Content Include="Ressources\wbAshava.jpg" />
+    <Content Include="Ressources\wbAvarice.jpg" />
+    <Content Include="Ressources\wbWandering-Death.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
