@@ -30,10 +30,14 @@ Partial Class FMain
 		Me.btnTracker = New System.Windows.Forms.Button()
 		Me.btnDungeon = New System.Windows.Forms.Button()
 		Me.pHomeContent = New System.Windows.Forms.Panel()
+		Me.Panel6 = New System.Windows.Forms.Panel()
+		Me.lblCountdownLegionTwo = New System.Windows.Forms.Label()
 		Me.Panel5 = New System.Windows.Forms.Panel()
 		Me.lblCountdownHelltideOne = New System.Windows.Forms.Label()
+		Me.Label7 = New System.Windows.Forms.Label()
 		Me.Panel4 = New System.Windows.Forms.Panel()
 		Me.lblCountdownLegionOne = New System.Windows.Forms.Label()
+		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
 		Me.Panel3 = New System.Windows.Forms.Panel()
 		Me.lblCountdownBossThree = New System.Windows.Forms.Label()
 		Me.Panel2 = New System.Windows.Forms.Panel()
@@ -50,15 +54,23 @@ Partial Class FMain
 		Me.PictureBox4 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-		Me.Panel6 = New System.Windows.Forms.Panel()
-		Me.lblCountdownLegionTwo = New System.Windows.Forms.Label()
-		Me.Label7 = New System.Windows.Forms.Label()
-		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+		Me.Label6 = New System.Windows.Forms.Label()
+		Me.Label8 = New System.Windows.Forms.Label()
+		Me.Label9 = New System.Windows.Forms.Label()
+		Me.Label10 = New System.Windows.Forms.Label()
+		Me.Label11 = New System.Windows.Forms.Label()
+		Me.Label12 = New System.Windows.Forms.Label()
+		Me.lblLegionZone = New System.Windows.Forms.Label()
+		Me.lblLegionTerritory = New System.Windows.Forms.Label()
+		Me.lblNextLegionTerritory = New System.Windows.Forms.Label()
+		Me.lblNextLegionZone = New System.Windows.Forms.Label()
 		Me.pMenu.SuspendLayout()
 		CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.pHomeContent.SuspendLayout()
+		Me.Panel6.SuspendLayout()
 		Me.Panel5.SuspendLayout()
 		Me.Panel4.SuspendLayout()
+		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.Panel3.SuspendLayout()
 		Me.Panel2.SuspendLayout()
 		Me.Panel1.SuspendLayout()
@@ -67,8 +79,6 @@ Partial Class FMain
 		CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.Panel6.SuspendLayout()
-		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'pMenu
@@ -182,8 +192,36 @@ Partial Class FMain
 		Me.pHomeContent.Location = New System.Drawing.Point(0, 43)
 		Me.pHomeContent.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
 		Me.pHomeContent.Name = "pHomeContent"
-		Me.pHomeContent.Size = New System.Drawing.Size(782, 499)
+		Me.pHomeContent.Size = New System.Drawing.Size(782, 442)
 		Me.pHomeContent.TabIndex = 2
+		'
+		'Panel6
+		'
+		Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Panel6.Controls.Add(Me.lblNextLegionTerritory)
+		Me.Panel6.Controls.Add(Me.Label11)
+		Me.Panel6.Controls.Add(Me.Label12)
+		Me.Panel6.Controls.Add(Me.lblCountdownLegionTwo)
+		Me.Panel6.Controls.Add(Me.lblNextLegionZone)
+		Me.Panel6.Controls.Add(Me.Label10)
+		Me.Panel6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Panel6.Location = New System.Drawing.Point(293, 351)
+		Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+		Me.Panel6.Name = "Panel6"
+		Me.Panel6.Size = New System.Drawing.Size(187, 70)
+		Me.Panel6.TabIndex = 27
+		'
+		'lblCountdownLegionTwo
+		'
+		Me.lblCountdownLegionTwo.AutoSize = True
+		Me.lblCountdownLegionTwo.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.lblCountdownLegionTwo.ForeColor = System.Drawing.Color.White
+		Me.lblCountdownLegionTwo.Location = New System.Drawing.Point(72, 48)
+		Me.lblCountdownLegionTwo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.lblCountdownLegionTwo.Name = "lblCountdownLegionTwo"
+		Me.lblCountdownLegionTwo.Size = New System.Drawing.Size(57, 16)
+		Me.lblCountdownLegionTwo.TabIndex = 14
+		Me.lblCountdownLegionTwo.Text = "00:00:00"
 		'
 		'Panel5
 		'
@@ -192,7 +230,7 @@ Partial Class FMain
 		Me.Panel5.Location = New System.Drawing.Point(518, 351)
 		Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
 		Me.Panel5.Name = "Panel5"
-		Me.Panel5.Size = New System.Drawing.Size(187, 91)
+		Me.Panel5.Size = New System.Drawing.Size(187, 70)
 		Me.Panel5.TabIndex = 24
 		'
 		'lblCountdownHelltideOne
@@ -200,34 +238,63 @@ Partial Class FMain
 		Me.lblCountdownHelltideOne.AutoSize = True
 		Me.lblCountdownHelltideOne.Font = New System.Drawing.Font("Arial", 13.0!)
 		Me.lblCountdownHelltideOne.ForeColor = System.Drawing.Color.White
-		Me.lblCountdownHelltideOne.Location = New System.Drawing.Point(58, 9)
+		Me.lblCountdownHelltideOne.Location = New System.Drawing.Point(58, 22)
 		Me.lblCountdownHelltideOne.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
 		Me.lblCountdownHelltideOne.Name = "lblCountdownHelltideOne"
 		Me.lblCountdownHelltideOne.Size = New System.Drawing.Size(80, 21)
 		Me.lblCountdownHelltideOne.TabIndex = 14
 		Me.lblCountdownHelltideOne.Text = "00:00:00"
 		'
+		'Label7
+		'
+		Me.Label7.AutoSize = True
+		Me.Label7.Font = New System.Drawing.Font("Arial", 9.0!)
+		Me.Label7.ForeColor = System.Drawing.Color.White
+		Me.Label7.Location = New System.Drawing.Point(304, 222)
+		Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.Label7.Name = "Label7"
+		Me.Label7.Size = New System.Drawing.Size(166, 15)
+		Me.Label7.TabIndex = 26
+		Me.Label7.Text = "The Gathering Legions (next)"
+		'
 		'Panel4
 		'
 		Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Panel4.Controls.Add(Me.lblLegionTerritory)
+		Me.Panel4.Controls.Add(Me.lblLegionZone)
+		Me.Panel4.Controls.Add(Me.Label9)
+		Me.Panel4.Controls.Add(Me.Label8)
+		Me.Panel4.Controls.Add(Me.Label6)
 		Me.Panel4.Controls.Add(Me.lblCountdownLegionOne)
 		Me.Panel4.Location = New System.Drawing.Point(75, 351)
 		Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
 		Me.Panel4.Name = "Panel4"
-		Me.Panel4.Size = New System.Drawing.Size(187, 91)
+		Me.Panel4.Size = New System.Drawing.Size(187, 70)
 		Me.Panel4.TabIndex = 24
 		'
 		'lblCountdownLegionOne
 		'
 		Me.lblCountdownLegionOne.AutoSize = True
-		Me.lblCountdownLegionOne.Font = New System.Drawing.Font("Arial", 13.0!)
+		Me.lblCountdownLegionOne.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.lblCountdownLegionOne.ForeColor = System.Drawing.Color.White
-		Me.lblCountdownLegionOne.Location = New System.Drawing.Point(50, 9)
+		Me.lblCountdownLegionOne.Location = New System.Drawing.Point(73, 48)
 		Me.lblCountdownLegionOne.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
 		Me.lblCountdownLegionOne.Name = "lblCountdownLegionOne"
-		Me.lblCountdownLegionOne.Size = New System.Drawing.Size(80, 21)
+		Me.lblCountdownLegionOne.Size = New System.Drawing.Size(57, 16)
 		Me.lblCountdownLegionOne.TabIndex = 14
 		Me.lblCountdownLegionOne.Text = "00:00:00"
+		'
+		'PictureBox1
+		'
+		Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox1.Image = Global.D4_Tools.My.Resources.Resources.Gathering_Legion
+		Me.PictureBox1.Location = New System.Drawing.Point(293, 240)
+		Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+		Me.PictureBox1.Name = "PictureBox1"
+		Me.PictureBox1.Size = New System.Drawing.Size(187, 105)
+		Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+		Me.PictureBox1.TabIndex = 25
+		Me.PictureBox1.TabStop = False
 		'
 		'Panel3
 		'
@@ -416,58 +483,132 @@ Partial Class FMain
 		Me.PictureBox2.TabIndex = 0
 		Me.PictureBox2.TabStop = False
 		'
-		'Panel6
+		'Label6
 		'
-		Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.Panel6.Controls.Add(Me.lblCountdownLegionTwo)
-		Me.Panel6.Location = New System.Drawing.Point(293, 351)
-		Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-		Me.Panel6.Name = "Panel6"
-		Me.Panel6.Size = New System.Drawing.Size(187, 91)
-		Me.Panel6.TabIndex = 27
+		Me.Label6.AutoSize = True
+		Me.Label6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label6.ForeColor = System.Drawing.Color.White
+		Me.Label6.Location = New System.Drawing.Point(2, 6)
+		Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.Label6.Name = "Label6"
+		Me.Label6.Size = New System.Drawing.Size(42, 16)
+		Me.Label6.TabIndex = 15
+		Me.Label6.Text = "Zone:"
 		'
-		'lblCountdownLegionTwo
+		'Label8
 		'
-		Me.lblCountdownLegionTwo.AutoSize = True
-		Me.lblCountdownLegionTwo.Font = New System.Drawing.Font("Arial", 13.0!)
-		Me.lblCountdownLegionTwo.ForeColor = System.Drawing.Color.White
-		Me.lblCountdownLegionTwo.Location = New System.Drawing.Point(50, 9)
-		Me.lblCountdownLegionTwo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-		Me.lblCountdownLegionTwo.Name = "lblCountdownLegionTwo"
-		Me.lblCountdownLegionTwo.Size = New System.Drawing.Size(80, 21)
-		Me.lblCountdownLegionTwo.TabIndex = 14
-		Me.lblCountdownLegionTwo.Text = "00:00:00"
+		Me.Label8.AutoSize = True
+		Me.Label8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label8.ForeColor = System.Drawing.Color.White
+		Me.Label8.Location = New System.Drawing.Point(2, 27)
+		Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.Label8.Name = "Label8"
+		Me.Label8.Size = New System.Drawing.Size(64, 16)
+		Me.Label8.TabIndex = 16
+		Me.Label8.Text = "Territory:"
 		'
-		'Label7
+		'Label9
 		'
-		Me.Label7.AutoSize = True
-		Me.Label7.Font = New System.Drawing.Font("Arial", 9.0!)
-		Me.Label7.ForeColor = System.Drawing.Color.White
-		Me.Label7.Location = New System.Drawing.Point(304, 222)
-		Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-		Me.Label7.Name = "Label7"
-		Me.Label7.Size = New System.Drawing.Size(166, 15)
-		Me.Label7.TabIndex = 26
-		Me.Label7.Text = "The Gathering Legions (next)"
+		Me.Label9.AutoSize = True
+		Me.Label9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label9.ForeColor = System.Drawing.Color.White
+		Me.Label9.Location = New System.Drawing.Point(2, 48)
+		Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.Label9.Name = "Label9"
+		Me.Label9.Size = New System.Drawing.Size(70, 16)
+		Me.Label9.TabIndex = 17
+		Me.Label9.Text = "Expected:"
 		'
-		'PictureBox1
+		'Label10
 		'
-		Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox1.Image = Global.D4_Tools.My.Resources.Resources.Gathering_Legion
-		Me.PictureBox1.Location = New System.Drawing.Point(293, 240)
-		Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-		Me.PictureBox1.Name = "PictureBox1"
-		Me.PictureBox1.Size = New System.Drawing.Size(187, 105)
-		Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-		Me.PictureBox1.TabIndex = 25
-		Me.PictureBox1.TabStop = False
+		Me.Label10.AutoSize = True
+		Me.Label10.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label10.ForeColor = System.Drawing.Color.White
+		Me.Label10.Location = New System.Drawing.Point(2, 48)
+		Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.Label10.Name = "Label10"
+		Me.Label10.Size = New System.Drawing.Size(70, 16)
+		Me.Label10.TabIndex = 20
+		Me.Label10.Text = "Expected:"
+		'
+		'Label11
+		'
+		Me.Label11.AutoSize = True
+		Me.Label11.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label11.ForeColor = System.Drawing.Color.White
+		Me.Label11.Location = New System.Drawing.Point(2, 27)
+		Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.Label11.Name = "Label11"
+		Me.Label11.Size = New System.Drawing.Size(64, 16)
+		Me.Label11.TabIndex = 19
+		Me.Label11.Text = "Territory:"
+		'
+		'Label12
+		'
+		Me.Label12.AutoSize = True
+		Me.Label12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label12.ForeColor = System.Drawing.Color.White
+		Me.Label12.Location = New System.Drawing.Point(2, 6)
+		Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.Label12.Name = "Label12"
+		Me.Label12.Size = New System.Drawing.Size(42, 16)
+		Me.Label12.TabIndex = 18
+		Me.Label12.Text = "Zone:"
+		'
+		'lblLegionZone
+		'
+		Me.lblLegionZone.AutoSize = True
+		Me.lblLegionZone.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.lblLegionZone.ForeColor = System.Drawing.Color.White
+		Me.lblLegionZone.Location = New System.Drawing.Point(45, 6)
+		Me.lblLegionZone.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.lblLegionZone.Name = "lblLegionZone"
+		Me.lblLegionZone.Size = New System.Drawing.Size(50, 16)
+		Me.lblLegionZone.TabIndex = 18
+		Me.lblLegionZone.Text = "no data"
+		'
+		'lblLegionTerritory
+		'
+		Me.lblLegionTerritory.AutoSize = True
+		Me.lblLegionTerritory.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.lblLegionTerritory.ForeColor = System.Drawing.Color.White
+		Me.lblLegionTerritory.Location = New System.Drawing.Point(63, 27)
+		Me.lblLegionTerritory.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.lblLegionTerritory.Name = "lblLegionTerritory"
+		Me.lblLegionTerritory.Size = New System.Drawing.Size(50, 16)
+		Me.lblLegionTerritory.TabIndex = 19
+		Me.lblLegionTerritory.Text = "no data"
+		'
+		'lblNextLegionTerritory
+		'
+		Me.lblNextLegionTerritory.AutoSize = True
+		Me.lblNextLegionTerritory.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.lblNextLegionTerritory.ForeColor = System.Drawing.Color.White
+		Me.lblNextLegionTerritory.Location = New System.Drawing.Point(63, 27)
+		Me.lblNextLegionTerritory.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.lblNextLegionTerritory.Name = "lblNextLegionTerritory"
+		Me.lblNextLegionTerritory.Size = New System.Drawing.Size(50, 16)
+		Me.lblNextLegionTerritory.TabIndex = 21
+		Me.lblNextLegionTerritory.Text = "no data"
+		'
+		'lblNextLegionZone
+		'
+		Me.lblNextLegionZone.AutoSize = True
+		Me.lblNextLegionZone.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.lblNextLegionZone.ForeColor = System.Drawing.Color.White
+		Me.lblNextLegionZone.Location = New System.Drawing.Point(45, 6)
+		Me.lblNextLegionZone.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.lblNextLegionZone.Name = "lblNextLegionZone"
+		Me.lblNextLegionZone.Size = New System.Drawing.Size(50, 16)
+		Me.lblNextLegionZone.TabIndex = 20
+		Me.lblNextLegionZone.Text = "no data"
 		'
 		'FMain
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.Black
-		Me.ClientSize = New System.Drawing.Size(782, 542)
+		Me.ClientSize = New System.Drawing.Size(782, 485)
 		Me.Controls.Add(Me.pHomeContent)
 		Me.Controls.Add(Me.pMenu)
 		Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -479,10 +620,13 @@ Partial Class FMain
 		CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.pHomeContent.ResumeLayout(False)
 		Me.pHomeContent.PerformLayout()
+		Me.Panel6.ResumeLayout(False)
+		Me.Panel6.PerformLayout()
 		Me.Panel5.ResumeLayout(False)
 		Me.Panel5.PerformLayout()
 		Me.Panel4.ResumeLayout(False)
 		Me.Panel4.PerformLayout()
+		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.Panel3.ResumeLayout(False)
 		Me.Panel3.PerformLayout()
 		Me.Panel2.ResumeLayout(False)
@@ -494,9 +638,6 @@ Partial Class FMain
 		CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-		Me.Panel6.ResumeLayout(False)
-		Me.Panel6.PerformLayout()
-		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 
 	End Sub
@@ -532,4 +673,14 @@ Partial Class FMain
 	Friend WithEvents lblCountdownLegionTwo As Label
 	Friend WithEvents Label7 As Label
 	Friend WithEvents PictureBox1 As PictureBox
+	Friend WithEvents Label9 As Label
+	Friend WithEvents Label8 As Label
+	Friend WithEvents Label6 As Label
+	Friend WithEvents Label10 As Label
+	Friend WithEvents Label11 As Label
+	Friend WithEvents Label12 As Label
+	Friend WithEvents lblNextLegionTerritory As Label
+	Friend WithEvents lblNextLegionZone As Label
+	Friend WithEvents lblLegionTerritory As Label
+	Friend WithEvents lblLegionZone As Label
 End Class

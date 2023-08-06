@@ -214,6 +214,8 @@ Public Class FMain
 
 		If remainingTime.Ticks > 0 Then
 			lblCountdownLegionOne.Text = String.Format("{0:00}:{1:00}:{2:00}", remainingTime.Hours, remainingTime.Minutes, remainingTime.Seconds)
+			lblLegionTerritory.Text = legionTerritory
+			lblLegionZone.Text = legionZone
 			CheckNotification(remainingTime, legionTerritory, legionZone)
 		Else
 			lblCountdownLegionOne.Text = "00:00:00"

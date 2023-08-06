@@ -132,9 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataLayer.vb" />
-    <Compile Include="FMain.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FMain.vb" />
     <Compile Include="FMain.Designer.vb">
       <DependentUpon>FMain.vb</DependentUpon>
       <SubType>Form</SubType>
