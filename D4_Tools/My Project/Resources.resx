@@ -118,8 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Helltide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Helltide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wbWandering-Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\wbWandering-Death.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wbAshava" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\wbAshava.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wbAvarice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\wbAvarice.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,13 +133,10 @@
   <data name="d4-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\d4-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wbAshava" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\wbAshava.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Gathering-Legion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\Gathering-Legion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Helltide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Helltide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="d4-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\d4-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

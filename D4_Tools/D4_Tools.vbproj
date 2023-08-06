@@ -52,6 +52,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -73,6 +74,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataLayer.vb" />
     <Compile Include="FMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -120,9 +122,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ressources\d4-button-primary-left-hover.png" />
+    <Content Include="Ressources\d4-button-primary-right-hover_1.png" />
+    <Content Include="Ressources\d4-button-primary-tile-hover.png" />
+    <Content Include="Ressources\d4-button.png" />
     <Content Include="Ressources\d4-logo.png" />
     <Content Include="Ressources\Gathering-Legion.jpg" />
     <Content Include="Ressources\Helltide.jpg" />
+    <Content Include="Ressources\logo.ico" />
     <Content Include="Ressources\wbAshava.jpg" />
     <Content Include="Ressources\wbAvarice.jpg" />
     <Content Include="Ressources\wbWandering-Death.jpg" />
